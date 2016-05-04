@@ -1,0 +1,14 @@
+{
+  "name": "angulartestscope",
+  "version": "1.0.0",
+  "description": "This is an app to test angular scope",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bowser": "^1.0.0"
+  }
+}

@@ -1,0 +1,45 @@
+<head>
+    <title>App to test angular Scope</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+    <script src="app.js"></script>
+   
+</head>
+
+<body ng-app="app">
+
+    <div ng-controller="ctrlExample1">
+        <h4>This example uses a visible property set in the scope with ng-if.</h4>
+        isVisible = {{isVisible}} 
+        <br/>
+        outer: <input type="checkbox" ng-model="isVisible" />
+        <br/>
+        <div ng-if="isVisible">
+            ng-if: <input type="checkbox" ng-model="isVisible" />
+        </div>
+    </div>
+
+
+    <div ng-controller="ctrlExample2">
+        <h4>This example uses visible property set on a object assigned to a scope with ng-if</h4>
+          isVisible = {{obj.isVisible}} 
+        <br/>     
+        outer: <input type="checkbox" ng-model="obj.isVisible" />
+        
+        <br/>
+        <div ng-if="obj.isVisible">
+            ng-if: <input type="checkbox" ng-model="obj.isVisible" />
+        </div>
+    </div>
+
+    <div ng-controller="ctrlExample3 as ctrl3">
+        <h4>This example uses ctrl as example with a property set on the this object</h4>
+        isVisible = {{ctrl3.isVisible}} 
+        <br/>
+        outer: <input type="checkbox" ng-model="ctrl3.isVisible" />
+        <br/>
+        <div ng-if="ctrl3.isVisible">
+            ng-if: <input type="checkbox" ng-model="ctrl3.isVisible"/>
+        </div>
+    </div>
+
+</body>
