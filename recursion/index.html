@@ -1,0 +1,32 @@
+<html ng-app="app">
+
+<head>
+    <title>Recursion test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+    <script src="app.js"></script>
+
+    <script id="recursion.html" type="text/ng-template">
+        <div>
+            Name: {{val.name}}
+            <pre>
+            {{val | json}}
+        </pre>
+        </div>
+    </script>
+
+</head>
+
+<body ng-controller="ctrl">
+
+    <folder-tree val="data"></folder-tree>
+
+    <div>
+        <h4>Pre</h4>
+        <pre>
+      
+    </pre>
+    </div>
+
+</body>
+
+</html>
